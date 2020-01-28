@@ -16,6 +16,8 @@ export class CuerpoComponent implements OnInit {
     seleccionado: true
   };
 
+  saludo = 'Hola Mauricio';
+
   constructor() { }
 
   ngOnInit() {
