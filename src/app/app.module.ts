@@ -7,9 +7,10 @@ import { TerceroComponent } from './components/tercero/tercero.component';
 import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 import { BrazoComponent } from './components/brazo/brazo.component';
 import { PieComponent } from './components/pie/pie.component';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { PokemonService } from './services/pokemon.service';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [PokemonService],
   bootstrap: [AppComponent]
