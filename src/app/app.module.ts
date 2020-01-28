@@ -9,7 +9,7 @@ import { TerceroComponent } from './components/tercero/tercero.component';
   declarations: [
     AppComponent,
     PrimerComponent,
-    TerceroComponent // agregado (arriba el import igual)
+    TerceroComponent
   ],
   imports: [
     BrowserModule
