@@ -1,3 +1,14 @@
 <p>pokemon works!</p>
 
-<p *ngFor="let pokemon of lista">{{pokemon.name}}</p>
+<!-- <p *ngFor="let pokemon of lista">{{pokemon.name}}</p> -->
+
+<table style="border: solid 1px black">
+    <thead>
+        <th>name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pokemon of lista">
+            <td>{{pokemon.name}}</td>
+        </tr>
+    </tbody>
+</table>
