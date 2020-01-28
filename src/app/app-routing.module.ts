@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 
 const routes: Routes = [
-  { path: 'pokemon', component: PokemonComponent }
+  { path: 'pokemon', component: PokemonComponent },
+  { path: 'cuerpo', component: CuerpoComponent }
 ];
 
 @NgModule({
