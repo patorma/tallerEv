@@ -7,6 +7,7 @@ import { TerceroComponent } from './components/tercero/tercero.component';
 import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 import { BrazoComponent } from './components/brazo/brazo.component';
 import { PieComponent } from './components/pie/pie.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PieComponent } from './components/pie/pie.component';
     PieComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
