@@ -16,6 +16,8 @@ export class PokemonComponent implements OnInit {
     this.pokemonService.getPokemon().subscribe(res => {
       console.log(res);
       this.lista = res.results;
+    }, err => {
+      console.log(err);
     });
   }
 
