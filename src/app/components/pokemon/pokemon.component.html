@@ -6,9 +6,12 @@
     <thead>
         <th>name</th>
     </thead>
-    <tbody>
-        <tr *ngFor="let pokemon of lista">
+    <tbody *ngFor="let pokemon of lista">
+        <tr (click)="seleccionar(pokemon)">
             <td>{{pokemon.name}}</td>
+        </tr>
+        <tr *ngIf="pokemon.seleccionado">{{pokemon.url}}
+            <!-- <td>{{pokemon.name}}</td> -->
         </tr>
     </tbody>
 </table>

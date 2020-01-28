@@ -24,4 +24,8 @@ export class PokemonComponent implements OnInit {
     });
   }
 
+  seleccionar(x: { seleccionado: boolean; }) {
+    x.seleccionado = !x.seleccionado;
+  }
+
 }
