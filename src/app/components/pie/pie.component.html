@@ -1,9 +1,13 @@
 <p>pie works!</p>
 
-<input type ="text" [(ngModel)]="envivo">
+<input type="text" [(ngModel)]="envivo">
 
 {{envivo}}
 
 <br>
 
-<button (click)="imprimirEnConsola()">Haz click!</button>
+<button (click)="toggle()">Haz click!</button>
+
+<div *ngIf="mostrar">
+    <p>se muestra</p>
+</div>

@@ -9,6 +9,8 @@ export class PieComponent implements OnInit {
 
   envivo = ''; // variable bidireccional
 
+  mostrar = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +18,10 @@ export class PieComponent implements OnInit {
 
   imprimirEnConsola() {
     console.log(this.envivo + ' <- del botón');
+  }
+
+  toggle() {
+    this.mostrar = !this.mostrar;
   }
 
 }
