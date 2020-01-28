@@ -6,6 +6,7 @@ import { PrimerComponent } from './components/primer/primer.component';
 import { TerceroComponent } from './components/tercero/tercero.component';
 import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
 import { BrazoComponent } from './components/brazo/brazo.component';
+import { PieComponent } from './components/pie/pie.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BrazoComponent } from './components/brazo/brazo.component';
     PrimerComponent,
     TerceroComponent,
     CuerpoComponent,
-    BrazoComponent
+    BrazoComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule
