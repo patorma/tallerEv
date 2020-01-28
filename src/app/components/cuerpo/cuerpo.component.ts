@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Persona } from 'src/app/models/persona';
 
 @Component({
   selector: 'app-cuerpo',
@@ -9,9 +10,10 @@ export class CuerpoComponent implements OnInit {
 
   title = 'Hola a todos!';
 
-  title2 = {
+  title2: Persona = {
     nombre: 'Mauricio',
-    apellido: 'Ibañez'
+    apellido: 'Ibañez',
+    seleccionado: true
   };
 
   constructor() { }
