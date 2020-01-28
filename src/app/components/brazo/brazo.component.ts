@@ -14,4 +14,8 @@ export class BrazoComponent implements OnInit {
   ngOnInit() {
   }
 
+  enviarMensaje() {
+    this.enviar.emit('hola cuerpo');
+  }
+
 }
