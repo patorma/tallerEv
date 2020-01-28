@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-brazo',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./brazo.component.css']
 })
 export class BrazoComponent implements OnInit {
+
+  @Input() mensaje = 'msg por defecto';
 
   constructor() { }
 
