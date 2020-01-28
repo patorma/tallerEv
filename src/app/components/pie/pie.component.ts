@@ -11,6 +11,9 @@ export class PieComponent implements OnInit {
 
   mostrar = false;
 
+  // lista = [1, 'otto', {asdf: 'ottoa'}] <- lista de elementos diferente tipo
+  lista = ['otto', 'mauricio', 'katherine'];
+
   constructor() { }
 
   ngOnInit() {
