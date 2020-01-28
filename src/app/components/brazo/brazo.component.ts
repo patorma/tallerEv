@@ -12,6 +12,7 @@ export class BrazoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('brazo fue instanciado');
   }
 
   enviarMensaje() {
