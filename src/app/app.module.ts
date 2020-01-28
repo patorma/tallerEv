@@ -9,6 +9,7 @@ import { BrazoComponent } from './components/brazo/brazo.component';
 import { PieComponent } from './components/pie/pie.component';
 import { FormsModule} from '@angular/forms';
 import { PokemonService } from './services/pokemon.service';
+import { PokemonComponent } from './components/pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PokemonService } from './services/pokemon.service';
     TerceroComponent,
     CuerpoComponent,
     BrazoComponent,
-    PieComponent
+    PieComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
