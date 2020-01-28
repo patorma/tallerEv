@@ -9,6 +9,11 @@ export class CuerpoComponent implements OnInit {
 
   title = 'Hola a todos!';
 
+  title2 = {
+    nombre: 'Mauricio',
+    apellido: 'Ibañez'
+  };
+
   constructor() { }
 
   ngOnInit() {
