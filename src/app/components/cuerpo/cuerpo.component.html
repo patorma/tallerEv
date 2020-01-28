@@ -11,4 +11,7 @@
 <!-- acceder a un dato -->
 
 
-<app-brazo [mensaje]="saludo"></app-brazo>
+<app-brazo (enviar)="imprimirMensaje($event)" [mensaje]="saludo"></app-brazo>
+
+<br><br>
+{{mensajeDeHijo}}

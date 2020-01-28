@@ -17,10 +17,15 @@ export class CuerpoComponent implements OnInit {
   };
 
   saludo = 'Hola Mauricio';
+  mensajeDeHijo: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  imprimirMensaje(msg: string) {
+    this.mensajeDeHijo = msg;
   }
 
 }
