@@ -14,4 +14,8 @@ export class PieComponent implements OnInit {
   ngOnInit() {
   }
 
+  imprimirEnConsola() {
+    console.log(this.envivo + ' <- del botón');
+  }
+
 }

@@ -1,0 +1,25 @@
+[1mdiff --git a/src/app/components/pie/pie.component.html b/src/app/components/pie/pie.component.html[m
+[1mindex 28683a2..9e8500f 100644[m
+[1m--- a/src/app/components/pie/pie.component.html[m
+[1m+++ b/src/app/components/pie/pie.component.html[m
+[36m@@ -3,3 +3,7 @@[m
+ <input type ="text" [(ngModel)]="envivo">[m
+ [m
+ {{envivo}}[m
+[32m+[m
+[32m+[m[32m<br>[m
+[32m+[m
+[32m+[m[32m<button (click)="imprimirEnConsola()">Haz click!</button>[m
+[1mdiff --git a/src/app/components/pie/pie.component.ts b/src/app/components/pie/pie.component.ts[m
+[1mindex d66471c..3625912 100644[m
+[1m--- a/src/app/components/pie/pie.component.ts[m
+[1m+++ b/src/app/components/pie/pie.component.ts[m
+[36m@@ -14,4 +14,8 @@[m [mexport class PieComponent implements OnInit {[m
+   ngOnInit() {[m
+   }[m
+ [m
+[32m+[m[32m  imprimirEnConsola() {[m
+[32m+[m[32m    console.log(this.envivo + '<- del botón');[m
+[32m+[m[32m  }[m
+[32m+[m
+ }[m
