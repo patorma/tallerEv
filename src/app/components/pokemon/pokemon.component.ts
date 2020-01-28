@@ -8,11 +8,14 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class PokemonComponent implements OnInit {
 
+  lista = [];
+
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
-    this.pokemonService.getPokemon().subscribe(pokedex => {
-      console.log(pokedex);
+    this.pokemonService.getPokemon().subscribe(res => {
+      console.log(res);
+      this.lista = res.results;
     });
   }
 
