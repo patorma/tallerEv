@@ -1,13 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 
-.sidebar {
-    width: 100px;
-    float: left;
-    height: 100vh;
-    border: solid 1px red;
+body {
+    margin: 0px;
+    overflow-x: hidden;
 }
 
-.chile {
-    font-weight: bold;
-    color: red;
+.sidebar {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    border: solid 1px blue;
+    /*crea scroll */
+    overflow-y: scroll;
+}
+
+.content {
+    margin-left: 51%;
+}
+
+.header {
+    margin-left: 50.1%;
+    height: 3rem;
+    border: solid 1px blue;
+    width: 100%;
+    background-color: #2175bc;
+}
+
+.footer {
+    width: 100%;
+    margin-left: 50.1%;
+    border: solid 1px blue;
+    position: fixed;
+    bottom: 0px;
+}
+
+.active {
+    background-color: red;
 }

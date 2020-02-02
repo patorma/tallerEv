@@ -9,13 +9,17 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class PokemonComponent implements OnInit {
 
   lista = [];
+  
 
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
     this.pokemonService.getPokemon().subscribe(res => {
+  
       console.log(res);
       this.lista = res.results;
+      
+      
       if (res.next) {
         this.lista.push({ name: 'HAY MAS' });
       }
@@ -25,7 +29,9 @@ export class PokemonComponent implements OnInit {
   }
 
   seleccionar(x: { seleccionado: boolean; }) {
+    // event.preventDefault();
     x.seleccionado = !x.seleccionado;
-  }
+    
+   }
 
 }

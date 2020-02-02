@@ -2,16 +2,22 @@
 
 <!-- <p *ngFor="let pokemon of lista">{{pokemon.name}}</p> -->
 
-<table style="border: solid 1px black">
+<table class="table">
     <thead>
         <th>name</th>
+        <th>image</th>
     </thead>
-    <tbody *ngFor="let pokemon of lista">
-        <tr (click)="seleccionar(pokemon)">
+    <tbody *ngFor="let pokemon of lista; let indice=index ">
+        <tr>
             <td>{{pokemon.name}}</td>
+            <td>
+                <a [routerLink]="['/detallepokemon',pokemon.name]" [routerLinkActive]="'active'"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{indice+1}}.png" [alt]="pokemon.name"></a>
+            </td>
+
         </tr>
-        <tr *ngIf="pokemon.seleccionado">{{pokemon.url}}
-            <!-- <td>{{pokemon.name}}</td> -->
-        </tr>
+        <!-- <tr *ngIf="pokemon.seleccionado">{{pokemon.name}} -->
+        <!-- <td>{{pokemon.name}}</td> -->
+        <!-- </tr> -->
+
     </tbody>
 </table>

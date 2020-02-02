@@ -5,13 +5,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class PokemonService {
+export class PokemonIdServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getPokemon(): Observable<any> {
-    // return this.http.get('https://ng-pokedex.firebaseapp.com/api/pokemon.json');
-    return this.http.get<any>('https://pokeapi.co/api/v2/pokemon');
+  getPokemonById(id:any):Observable<any>{
+  return this.http.get<any>('https://pokeapi.co/api/v2/pokemon/' + id);
   }
-
 }

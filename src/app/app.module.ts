@@ -15,7 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { DetallePokemonComponent } from './components/detalle-pokemon/detalle-pokemon.component';
+import {PokemonIdServiceService} from './services/pokemon-id-service.service' ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { AppRoutingModule } from './app-routing.module';
     PokemonComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    DetallePokemonComponent
   ],
   imports: [
     AppRoutingModule,
@@ -35,7 +37,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [PokemonService],
+  providers: [PokemonService,PokemonIdServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,19 +1,20 @@
-<p>cuerpo works!</p>
+<p>{{pokemonId}}</p>
 
-{{title}}
-<!-- Binging String interpolation -->
+<!-- {{title}} -->
 
-<br><br>
-{{title2 | json}}
+<!-- 
+<br><br> {{title2 | json}}
 
-<br><br>
-{{title2.seleccionado}}
+<br><br> {{title2.seleccionado}} -->
 <!-- acceder a un dato -->
 
+<div *ngFor="let pokemon of lista">
 
-<app-brazo (enviar)="imprimirMensaje($event)" [mensaje]="saludo"></app-brazo>
+    {{pokemon.ability | json}}
+</div>
 
-<br><br>
-{{mensajeDeHijo}}
+<!-- <app-brazo (enviar)="imprimirMensaje($event)" [mensaje]="saludo"></app-brazo>
 
-<app-pie></app-pie>
+<br><br> {{mensajeDeHijo}} -->
+
+<!-- <app-pie></app-pie> -->

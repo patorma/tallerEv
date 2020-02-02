@@ -1,0 +1,14 @@
+.table {
+    /* border: solid 4px black; */
+    width: 50%;
+    padding: .1rem;
+    /* con esto lo separo del sidebar */
+    margin: 90px;
+    margin-top: .1em;
+}
+
+th,
+td {
+    width: 25%;
+    border: 1px solid #000;
+}

@@ -5,7 +5,21 @@
 
 <!-- <app-cuerpo></app-cuerpo> -->
 
-<app-sidebar></app-sidebar>
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="sidebar">
+    <app-sidebar></app-sidebar>
+    <app-pokemon></app-pokemon>
+
+</div>
+
+<div class="header">
+    <app-header></app-header>
+</div>
+
+<div class="content">
+    <app-cuerpo></app-cuerpo>
+    <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>
